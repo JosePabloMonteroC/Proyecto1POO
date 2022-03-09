@@ -21,8 +21,10 @@ public class Main extends Application {
 	}
 	
 	public static void main(String[] args) {
+		
 		DataWorker obj1 = new DataWorker();
         String[] palabras = {"Max","Hamilton","FIA"};
+        
         obj1.setListPalabras(obj1.regresaArrayList("C:\\Users\\pepem\\git\\Proyecto1POO\\Proyecto1POO\\src\\application\\temporal1.csv"));
         obj1.setListPalabras(obj1.eliminarCaracteres(obj1.getListPalabras()));
         obj1.setPalabras(palabras);
