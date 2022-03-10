@@ -34,14 +34,14 @@ public class Main extends Application {
         
         obj1.setListPalabras(obj1.regresaArrayList("C:\\Users\\pepem\\git\\Proyecto1POO\\Proyecto1POO\\src\\application\\TweetsAbuDhabiGP.csv"));
         obj1.setListPalabras(obj1.eliminarCaracteres(obj1.getListPalabras()));
-        obj1.setPalabras(palabras);
-        obj1.setTweets(obj1.contarPalabras(obj1.getPalabras(),obj1.getListPalabras()));
-        obj1.imprimirPalabras(obj1.getTweets(), obj1.getPalabras());
+        obj1.setPalabrasConsultadas(palabras);
+        obj1.setNumTweets(obj1.contarPalabras(obj1.getPalabrasConsultadas(),obj1.getListPalabras()));
+        obj1.imprimirPalabras(obj1.getNumTweets(), obj1.getPalabrasConsultadas());
         
-        obj1.contadorRedBull(obj1.getTweets(), obj1.getPalabras());
-        obj1.contadorMerc(obj1.getTweets(), obj1.getPalabras());
-        obj1.contadorFia(obj1.getTweets(), obj1.getPalabras());
-        obj1.contadorLatifi(obj1.getTweets(), obj1.getPalabras());
+        obj1.contadorRedBull(obj1.getNumTweets(), obj1.getPalabrasConsultadas());
+        obj1.contadorMerc(obj1.getNumTweets(), obj1.getPalabrasConsultadas());
+        obj1.contadorFia(obj1.getNumTweets(), obj1.getPalabrasConsultadas());
+        obj1.contadorLatifi(obj1.getNumTweets(), obj1.getPalabrasConsultadas());
         
         
         launch(args);

@@ -7,8 +7,8 @@ import java.util.Scanner;
 
 public class DataWorker {
 	private ArrayList<String> listPalabras = new ArrayList<String>();
-	private String[] palabras = new String [30];
-	private int[] tweets;
+	private String[] palabrasConsultadas = new String [30];
+	private int[] numTweets;
 	
 	/**
 	 * Método que crea una array list a partir de un csv
@@ -165,20 +165,20 @@ public class DataWorker {
 		this.listPalabras = listPalabras;
 	}
 
-	public String[] getPalabras() {
-		return palabras;
+	public String[] getPalabrasConsultadas() {
+		return palabrasConsultadas;
 	}
 
-	public void setPalabras(String[] palabras) {
-		this.palabras = palabras;
+	public void setPalabrasConsultadas(String[] palabras) {
+		this.palabrasConsultadas = palabras;
 	}
 
-	public int[] getTweets() {
-		return tweets;
+	public int[] getNumTweets() {
+		return numTweets;
 	}
 
-	public void setTweets(int[] tweets) {
-		this.tweets = tweets;
+	public void setNumTweets(int[] tweets) {
+		this.numTweets = tweets;
 	}
 
 	
