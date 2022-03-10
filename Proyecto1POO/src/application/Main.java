@@ -41,6 +41,7 @@ public class Main extends Application {
         obj1.contadorFia(obj1.getTweets(), obj1.getPalabras());
         obj1.contadorLatifi(obj1.getTweets(), obj1.getPalabras());
         
+        
         launch(args);
         
         

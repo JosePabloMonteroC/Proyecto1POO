@@ -130,7 +130,7 @@ public class DataWorker {
 	public int contadorFia(int[] numPalabras, String[] palabras) {
 		int contFIA = 0;
 		for(int i = 21; i <27;i++) {
-			contFIA = numPalabras[i]+contFIA;
+			contFIA = numPalabras[i] + contFIA;
 		}
 		System.out.println("El numero de veces que se mencionó a FIA/Masi fue:" + contFIA);
 	
