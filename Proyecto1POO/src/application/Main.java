@@ -28,9 +28,9 @@ public class Main extends Application {
         					 "Michael", "Masi", "FIA","Safety", "Car","SC",
         					 "Nicholas","Latifi","Williams"};
         
-        obj1.setListPalabras(obj1.regresaArrayList("C:\\Users\\Roman\\Downloads\\archive\\temporal1.csv"));
+        //obj1.setListPalabras(obj1.regresaArrayList("C:\\Users\\Roman\\Downloads\\archive\\temporal1.csv"));
         
-        //obj1.setListPalabras(obj1.regresaArrayList("C:\\Users\\pepem\\git\\Proyecto1POO\\Proyecto1POO\\src\\application\\temporal1.csv"));
+        obj1.setListPalabras(obj1.regresaArrayList("C:\\Users\\pepem\\git\\Proyecto1POO\\Proyecto1POO\\src\\application\\TweetsAbuDhabiGP.csv"));
         obj1.setListPalabras(obj1.eliminarCaracteres(obj1.getListPalabras()));
         obj1.setPalabras(palabras);
         obj1.setTweets(obj1.contarPalabras(obj1.getPalabras(),obj1.getListPalabras()));
