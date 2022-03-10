@@ -90,6 +90,70 @@ public class DataWorker {
 	}
 	
 	/**
+	 * Método que guarda el numero de veces que se menciona algo sobre Red Bull o Verstappen
+	 * @param numPalabras
+	 * @param palabras
+	 * @return
+	 */
+	public int contadorRedBull(int[] numPalabras, String[] palabras) {
+		int contRB = 0;
+		for(int i = 0; i < 11;i++) {
+			contRB = numPalabras[i]+contRB;
+		}
+		System.out.println("El numero de veces que se mencionó a RB/Verstappen fue:" + contRB);
+	
+		return contRB;
+	}
+
+	/**
+	 * Método que guarda el numero de veces que se menciona algo sobre Mercedes o Hamilton
+	 * @param numPalabras
+	 * @param palabras
+	 * @return
+	 */
+	public int contadorMerc(int[] numPalabras, String[] palabras) {
+		int contMerc = 0;
+		for(int i = 11; i <21;i++) {
+			contMerc = numPalabras[i]+contMerc;
+		}
+		System.out.println("El numero de veces que se mencionó a Mercedes/Hamilton fue:" + contMerc);
+	
+		return contMerc;
+	}
+	
+	/**
+	 * Método que guarda el numero de veces que se menciona algo sobre la FIA o Michael Masi
+	 * @param numPalabras
+	 * @param palabras
+	 * @return
+	 */
+	public int contadorFia(int[] numPalabras, String[] palabras) {
+		int contFIA = 0;
+		for(int i = 21; i <27;i++) {
+			contFIA = numPalabras[i]+contFIA;
+		}
+		System.out.println("El numero de veces que se mencionó a FIA/Masi fue:" + contFIA);
+	
+		return contFIA;
+	}	
+	
+	/**
+	 * Método que guarda el numero de veces que se menciona algo sobre Nicholas Latifi
+	 * @param numPalabras
+	 * @param palabras
+	 * @return
+	 */
+	public int contadorLatifi(int[] numPalabras, String[] palabras) {
+		int contLatifi = 0;
+		for(int i = 27; i <30;i++) {
+			contLatifi = numPalabras[i]+contLatifi;
+		}
+		System.out.println("El numero de veces que se mencionó a Latifi fue:" + contLatifi);
+	
+		return contLatifi;
+	}	
+	
+	/**
 	 * Métodos Set y Get.
 	 * @return
 	 */
