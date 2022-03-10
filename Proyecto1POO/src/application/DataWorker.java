@@ -46,7 +46,8 @@ public class DataWorker {
 		
 		for(i=0; i<tempArray.length; i++) {
 			
-			tempArray[i]=tempArray[i].replaceAll("F1", " ").replaceAll("\\d", " ").replaceAll("\\W", " ").replaceAll("AbuDhabiGP[\\w]*", " ").replaceAll("https[\\w]*", " ");
+			tempArray[i]=tempArray[i].replaceAll("F1", " ").replaceAll("\\d", " ").replaceAll("\\W", " ").replaceAll("AbuDhabiGP[\\w]*", " ")
+					.replaceAll("https[\\w]*", " ");
 			list.add(tempArray[i]);
 			System.out.println(list.get(i));
 		}
@@ -54,7 +55,8 @@ public class DataWorker {
 	}
 	
 	/**
-	 * Método que cuenta las palabras de un arreglo específico indicado por el usuario (Primeramente esta hardcodeado pero posteriormente se le pedirán al usuario las palabras)
+	 * Método que cuenta las palabras de un arreglo específico indicado por el usuario (Primeramente esta hardcodeado pero posteriormente
+	 *  se le pedirán al usuario las palabras)
 	 * @param palabras
 	 * @param tweets
 	 * @return int Array con los numeros de las palabras.
