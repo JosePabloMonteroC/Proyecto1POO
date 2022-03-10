@@ -22,18 +22,15 @@ public class Main extends Application {
 	
 	public static void main(String[] args) {
 		
-<<<<<<< HEAD
-		
-=======
->>>>>>> branch 'master' of https://github.com/emiromank/Proyecto1POO/
 		DataWorker obj1 = new DataWorker();
-        String[] palabras = {"Max","Hamilton","FIA"};
-<<<<<<< HEAD
-        obj1.setListPalabras(obj1.regresaArrayList("C:\\Users\\Roman\\Downloads\\archive\\temporal1.csv"));
-=======
+        String[] palabras = {"Max","Verstappen","VER","RedBull","RB","RBR","Horner","Supermax","maxverstappen","verstappen","max",
+        					 "Lewis","Hamilton","LH","Mercedes","AMG","Toto","Wolff","lewishamilton","hamilton","lewis",
+        					 "Michael", "Masi", "FIA","Safety", "Car","SC",
+        					 "Nicholas","Latifi","Williams"};
         
-        obj1.setListPalabras(obj1.regresaArrayList("C:\\Users\\pepem\\git\\Proyecto1POO\\Proyecto1POO\\src\\application\\temporal1.csv"));
->>>>>>> branch 'master' of https://github.com/emiromank/Proyecto1POO/
+        obj1.setListPalabras(obj1.regresaArrayList("C:\\Users\\Roman\\Downloads\\archive\\temporal1.csv"));
+        
+        //obj1.setListPalabras(obj1.regresaArrayList("C:\\Users\\pepem\\git\\Proyecto1POO\\Proyecto1POO\\src\\application\\temporal1.csv"));
         obj1.setListPalabras(obj1.eliminarCaracteres(obj1.getListPalabras()));
         obj1.setPalabras(palabras);
         obj1.setTweets(obj1.contarPalabras(obj1.getPalabras(),obj1.getListPalabras()));
