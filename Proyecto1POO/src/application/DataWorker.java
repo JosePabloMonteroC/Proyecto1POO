@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class DataWorker {
 	private ArrayList<String> listPalabras = new ArrayList<String>();
@@ -86,6 +88,7 @@ public class DataWorker {
 		for(int i = 0; i < palabras.length;i++) {
 			System.out.println("El numero de veces que se encontro la palabra:'"+palabras[i]+"' Fueron: "+numPalabras[i]);
 		}
+		
 		return;
 	}
 	
@@ -95,7 +98,7 @@ public class DataWorker {
 	 * @param palabras
 	 * @return
 	 */
-	public int contadorRedBull(int[] numPalabras, String[] palabras) {
+	public int contadorRedBull(int[] numPalabras) {
 		int contRB = 0;
 		for(int i = 0; i < 11;i++) {
 			contRB = numPalabras[i]+contRB;
@@ -111,7 +114,7 @@ public class DataWorker {
 	 * @param palabras
 	 * @return
 	 */
-	public int contadorMerc(int[] numPalabras, String[] palabras) {
+	public int contadorMerc(int[] numPalabras) {
 		int contMerc = 0;
 		for(int i = 11; i <21;i++) {
 			contMerc = numPalabras[i]+contMerc;
@@ -127,7 +130,7 @@ public class DataWorker {
 	 * @param palabras
 	 * @return
 	 */
-	public int contadorFia(int[] numPalabras, String[] palabras) {
+	public int contadorFia(int[] numPalabras) {
 		int contFIA = 0;
 		for(int i = 21; i <27;i++) {
 			contFIA = numPalabras[i] + contFIA;
@@ -143,7 +146,7 @@ public class DataWorker {
 	 * @param palabras
 	 * @return
 	 */
-	public int contadorLatifi(int[] numPalabras, String[] palabras) {
+	public int contadorLatifi(int[] numPalabras) {
 		int contLatifi = 0;
 		for(int i = 27; i <30;i++) {
 			contLatifi = numPalabras[i]+contLatifi;
